@@ -1,3 +1,9 @@
+/* For blurry loading, I had no trouble with the math and came up
+with the formulas on my own. But I learned the ins and outs of
+setInterval() and clearInterval(), and was reminded how to change
+an attribute's style properties with javascript. */
+
+
 image = document.querySelector("img");
 percentage = document.querySelector("#loader");
 let second = 0;
@@ -11,8 +17,6 @@ function keepTime() {
   if (blur == 30 || second == 100) {
     clearInterval(interval);
   }
-  console.log(second);
-  console.log(blur);
   blur = 30 - 0.3 * second;
   image.style.filter = `blur(${blur}px)`;
   percentage.innerHTML = `${second} %`;
