@@ -1,5 +1,18 @@
 image = document.querySelector("img");
+percentage = document.querySelector("#loader");
+let second = 0;
+let blur;
 
-window.addEventListener('load', () => {
-  image.classList.add("unblur");
-});
+let interval = setInterval(keepTime, 5);
+
+function keepTime() {
+  second++;
+  if (blur == 30 || second == 100) {
+    clearInterval(interval);
+  }
+  console.log(second);
+  console.log(blur);
+  blur = 30 - 0.3 * second;
+  image.style.filter = `blur(${blur}px)`;
+  percentage.innerHTML = `${second} %`;
+}
