@@ -8,7 +8,7 @@
 img {
   width: 100%;
   filter: blur(20px);
-  transition: all 2s ease;
+  transition: all 5s ease;
 }
 
 .unblur {
