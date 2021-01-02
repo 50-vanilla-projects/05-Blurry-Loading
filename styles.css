@@ -14,10 +14,12 @@ article {
 
 img {
   width: 100%;
-  filter: blur(20px);
-  transition: all 5s ease;
+  filter: blur(30px);
 }
 
-.unblur {
-  filter: blur(0);
+#loader {
+  width: 20vw;
+  position: absolute;
+  top: 10vh;
+  left: 85vw;
 }
