@@ -4,3 +4,9 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+body {
+  background-image: url("computer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
